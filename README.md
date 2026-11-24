@@ -1,104 +1,99 @@
-# 🚀 Progress — Full-Stack Learning & Knowledge OS
+# OFFMENU.
 
-> **Production-ready, full-stack, visually stunning learning ecosystem combining an AI Goal-to-Action Planner, an AI Digital Memory Vault, an Adaptive AI Mentor, and Real-Time Progress Tracking.**
+**GLOBAL FLAVOURS. NO RULEBOOK.**
 
----
+A fictional experimental restaurant in Vijayawada, built for a college web development assignment with semantic HTML5, CSS3 and vanilla JavaScript. No packages, framework, API key, build step or backend is required.
 
-## 🌟 Key Modules & Capabilities
+## Open locally
 
-### 1. 🎯 AI Goal-to-Action Planner (Gemini 3.8 Flash)
-- **Time-Bound Roadmap Generator**: Turns natural language goals (e.g., *"Master Rust and Async Programming in 30 days"*) into 5 sequential milestone stages with time estimates, mental model tags, and concrete action task checklists.
-- **Curated Public YouTube Masterclasses**: Verified YouTube course resolver that automatically identifies and links top-tier tutorials (freeCodeCamp, MIT, Andrej Karpathy, Fireship, Primeagen) for any engineering domain.
-- **Interactive Checklists**: Real-time completion percentages and celebratory confetti bursts on completing milestones and roadmap targets.
+1. Extract the supplied ZIP and keep the `offmenu` folder intact.
+2. Open `offmenu/index.html` in a modern browser. All images, CSS and JavaScript load locally; an internet connection is not required.
+3. Alternatively, open a terminal inside `offmenu`, run `python -m http.server 8000`, and visit `http://localhost:8000`. Python is optional and is used only as a local static preview server.
 
-### 2. 🧠 Digital Memory Vault ("Finds What You Forget")
-- **Vector Semantic Search**: Chunked and embedded via Google Gemini (`gemini-embedding-2`), stored with Supabase `pgvector`.
-- **Natural Language Retrieval**: Query using conversational prompts like *"Show me that Python code I wrote when I was learning loops"*.
-- **Relevance & Match Rationale**: Computes cosine similarity percentage and explains why each snippet answers the query.
-- **Multi-Source Drag-and-Drop Ingestion**: Supports `.md` notes, `.pdf` docs, and code files (`.ts`, `.py`, `.rs`, `.sql`).
+The delivery folder was saved under Windows Temp because this environment denied writes to the home directory. Copy the extracted project into your normal coursework folder for long-term storage.
 
-### 3. 🤖 Adaptive AI Mentor & Multimedia Hub
-- **Dynamic Coaching Personas**:
-  - 🏛️ **Socratic Mentor**: Guides via first principles and deduction without revealing answers upfront.
-  - 🏗️ **Senior Staff Architect**: Evaluates production trade-offs, p99 latency percentiles, and failure modes.
-  - 🌱 **Friendly Tutor**: Intuitive analogies and step-by-step clarity.
-  - 🎯 **Exam Drillmaster**: Timed interview traps and rigorous pop quizzes.
-- **Audio TTS Narration**: Integrated Gemini 3.1 Flash TTS text-to-speech narration with speech synthesis audio player.
-- **Visual Architecture Diagrams**: Gemini Omni 1.1 Flash distributed runtime diagrams and visual study aids inline.
+## GitHub Pages deployment
 
-### 4. 🎥 Lecture & Video Lab + AI Note Generating Bar
-- **Video Progress Tracking**: In-app video player linked directly to milestone completion.
-- **Auto-Tick Checkbox & Auto-Summary**: Marking a video as completed automatically ticks the milestone task, updates progress, awards +100 XP, and auto-generates a high-yield markdown summary saved directly to user storage.
-- **Embedded AI Note Generating Bar**: 1-click presets:
-  - 💡 *Key Takeaways & Mental Models*
-  - 💻 *Code & Syntax Snippets*
-  - 🗂️ *Active Recall Flashcards*
-  - 📋 *Executive Summary*
-  - 1-click "Save to Personal Storage Vault"
+1. Create a public GitHub repository, for example `offmenu`.
+2. Upload the **contents** of the local `offmenu` folder to its root. `index.html`, `style.css`, `script.js`, `README.md` and `assets` should be directly visible in the repository. Do not upload only the ZIP or nest everything in another `offmenu` folder.
+3. Open the repository's **Settings → Pages**. Choose **Deploy from a branch**, select **main** and **/(root)**, then save.
+4. Wait for deployment and use the **Visit site** link. The project URL normally follows `https://YOUR-USERNAME.github.io/offmenu/`.
+5. Push or upload later file changes to the same branch. Keep filename case and relative paths unchanged.
 
-### 5. 🎓 Post-Goal Assessment & Course Recommendations
-- **Goal Completion Assessment**: Upon reaching 100% (or via on-demand button), prompts user to take a:
-  - ⚡ *5-Question Rapid Concept Quiz*, or
-  - 🎓 *10-Question Comprehensive Engineering Exam*
-- **Instant Explanations**: Gemini 3.8 Flash evaluates answers, explains trade-offs, and calculates final mastery score.
-- **Domain Advancement**: Recommends 3 advanced engineering follow-up courses with 1-click *"Enroll & Generate Roadmap"*.
+Official reference: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site). No deployment has been performed on your behalf.
 
-### 6. 📁 Personal Storage Vault & File Search
-- **Dedicated Access Storage Modal**: Accessible via TopBar and Sidebar with active file counter.
-- **Instant Search & Filtering**: Filter by All, Summaries, Roadmaps, Notes, Code, Certificates.
-- **Markdown Document Preview & Export**: In-app viewer with 1-click copy and markdown download.
+## Project structure
 
-### 7. 📅 Interactive Calendar & Daily Quests
-- **Interactive Calendar Modal**: Month navigation, streak indicators, today jumper.
-- **5 Daily Learning Quests**:
-  1. 🎬 Watch Curated Video Lecture (+100 XP)
-  2. ⚡ Complete Milestone Action Checkbox (+50 XP)
-  3. 💬 Socratic Dialogue with AI Mentor (+50 XP)
-  4. 💾 Ingest or Search Memory Vault (+50 XP)
-  5. 🧠 Active Recall Flashcard Review (+50 XP)
+```text
+offmenu/
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets/
+    └── images/
+        ├── hero-plated-dish.jpg
+        ├── kitchen-detail.jpg
+        ├── charred-corn.jpg
+        ├── basque-cheesecake.jpg
+        ├── blood-orange-cooler.jpg
+        ├── the-detour.jpg
+        ├── restaurant-interior.jpg
+        ├── chef-preparing.jpg
+        └── dining-table.jpg
+```
 
-### 8. 📊 Analytics & Mastery Dashboard (Recharts)
-- **Weekly Study Tracking**: Bar chart comparing planned vs. actual study hours.
-- **Knowledge Vault Composition**: Donut chart breakdown of notes, code, summaries, and roadmaps.
-- **Skill Mastery Radar**: 6-axis proficiency assessment across systems, algorithms, caching, and AI engineering.
-- **30-Day Activity Heatmap**: Daily consistency tracking and unlockable engineering badges.
+## Design and implementation
 
----
+- Warm ivory and ink-black editorial spreads, restrained acid-lime accents, asymmetric imagery, large typography and thin rules.
+- Grid for major page compositions; Flexbox for navigation, price alignment, filters and action groups.
+- CSS variables hold colours, typography and spacing. Media queries adapt the page for mobile and tablet; the mobile gallery has its own arrangement.
+- The type stack prefers locally installed Space Grotesk / DM Sans, falling back to Arial / Helvetica. Serif accents use Georgia. No remote font service is required and no proprietary font files are distributed.
+- All ten dishes are authored in HTML and available without JavaScript. Category buttons progressively appear when JavaScript is active and update `aria-pressed` and a live result count.
+- Mobile navigation toggles open/closed, closes on link selection, outside click or Escape, and returns keyboard focus on Escape. Without JavaScript, links remain visible.
+- Forms have explicit labels, per-field errors, `aria-invalid`, a live status message and focus management. Date validation uses Vijayawada's Asia/Kolkata timezone, rejects past dates and Monday closures, and rejects already-passed times for today. Time options stay within the supplied service periods. Guest choices range from one to eight.
+- Reduced-motion preferences disable scrolling animation, hover transforms and reveals. Below-the-fold photographs use lazy loading; the hero has high fetch priority.
 
-## 🚀 Architecture & Tech Stack
+## Reservation and fictional-content notice
 
-| Layer | Technology |
-|---|---|
-| **Framework** | Next.js (App Router), TypeScript |
-| **Styling & Motion** | Tailwind CSS, Framer Motion, Skiper UI (4, 58, 64) |
-| **Analytics** | Recharts (Bar, Radar, Pie/Donut) |
-| **AI Engine** | Google Gemini 3.8 Flash, Gemini Omni 1.1 Flash, Gemini 3.1 Flash TTS |
-| **Vector DB** | Supabase (PostgreSQL with `pgvector` & `match_memories` RPC) |
-| **Local Resilience** | LocalStorage state backup & offline-first zero-setup fallback |
+**This is only a front-end demonstration.** The form prevents submission, validates in the browser and reports a demo success. It does not send an email, create a booking, call an API or store entered data. With JavaScript disabled, its submit button remains disabled. Your browser may independently offer its normal autofill feature.
 
----
+The restaurant, menu, guest comments and brand are fictional. No ratings, awards, precise address, phone number or real map location are claimed. `hello@offmenu.example` is a reserved example address. Social entries are visibly marked replacement placeholders and deliberately have no fake destination.
 
-## 🛠️ Quick Start & Running Locally
+## Image provenance and art direction
 
-1. **Navigate to project directory**:
-   \`\`\`bash
-   cd mindvault-ai
-   \`\`\`
+All nine images were created for this project with the built-in image-generation tool. They are **AI-generated concept images**, including the chef and interior; they are not photographs documenting a real restaurant, employee or customer. External stock downloads were unavailable in this environment. No third-party stock files, watermarks or fragile hotlinked images are included.
 
-2. **Environment Variables** (`.env.local`):
-   \`\`\`env
-   GEMINI_API_KEY=your_gemini_api_key
-   NEXT_PUBLIC_SUPABASE_URL=https://kwhgpmkpqqnbhqupaskw.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-   \`\`\`
+The original generated PNGs were encoded as optimized progressive JPEGs without altering their compositions. Local images total approximately 3 MB. Each image is used once and has descriptive alt text.
 
-3. **Start Development Server**:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+Prompt set (all requested realistic editorial photography, natural material textures, no text, logos or watermarks):
 
----
+| Asset | Final subject and art direction |
+| --- | --- |
+| `hero-plated-dish.jpg` | Portrait fine-dining composition of charred king oyster mushroom, vivid pumpkin puree, crisp rice and curry leaf oil on charcoal ceramic; hard warm sidelight and deep shadows. |
+| `kitchen-detail.jpg` | Portrait ingredient still life of curry leaves, yuzu, dried Guntur chillies, miso and king oyster mushrooms on dark slate. |
+| `charred-corn.jpg` | Three charred corn ribs with glossy miso butter, lime zest and a lime wedge on off-white ceramic against dark olive. |
+| `basque-cheesecake.jpg` | Landscape close-up of burnt Basque cheesecake and filter coffee caramel on an ivory plate; espresso cup behind, warm directional light. |
+| `blood-orange-cooler.jpg` | Portrait of a blood orange and rosemary cooler in a ribbed tumbler, ice, citrus slice, condensation and bubbles against olive tones. |
+| `the-detour.jpg` | Landscape of charred pumpkin wedges, dark peanut mole, emerald curry leaf oil and crisp rice on earthy ceramic; cinematic light and dark background. |
+| `restaurant-interior.jpg` | Wide contemporary Vijayawada restaurant concept with dark wood, concrete, textured plaster, linen pendant lamps, olive seating and late-afternoon window light. |
+| `chef-preparing.jpg` | Indian chef in black apron finishing an experimental vegetable dish with tweezers; close attention to hands and plate in a warm, dim professional kitchen. |
+| `dining-table.jpg` | Off-centre dark wood dining-table detail with handmade ceramic plates, stemmed glasses, ivory linen, minimal cutlery, a branch vase and candlelight. |
 
-## 🗄️ Database Setup (`supabase_schema.sql`)
-Run the provided `supabase_schema.sql` in your Supabase SQL editor to enable `pgvector`, table schema, RLS policies, and cosine distance matching function.
+## Verification and remaining visual review
+
+Completed checks:
+
+- JavaScript syntax validation.
+- Thirteen interaction checks in a lightweight DOM harness: navigation toggle state, five menu categories and counts, empty/invalid form handling, past dates, Monday closure, successful demo wording, restaurant-local minimum date and time conversion.
+- HTML audit: one H1, unique IDs, associated labels, descriptive image alt text, deferred external script, no inline CSS/JavaScript, working fragment targets and existing relative asset references.
+- All nine local images decoded successfully and were visually inspected for relevance and distinct composition.
+- CSS brace balance and reduced-motion implementation reviewed.
+
+**Browser rendering and actual device testing remain unverified.** Headless Edge failed to initialize its GPU process and Chrome timed out under this environment's restrictions. The interaction harness is not a substitute for a real browser accessibility or layout audit. No screenshot or cross-browser approval is claimed.
+
+Before submission, open the site and check 320, 375, 768, 1024 and 1440 px widths; confirm no horizontal scrolling, menu/keyboard operation, visible focus, all category counts (10 / 3 / 3 / 2 / 2), invalid email feedback, past-date and Monday rejection, successful demo wording, reduced motion, and images offline. Check at 200% zoom as well.
+
+## Editing
+
+Change content and prices in `index.html`, design tokens and layouts in `style.css`, and interaction behavior in `script.js`. Keep photos under `assets/images` and update both the relative `src` and meaningful `alt` text when replacing them. Replace fictional contact/social information only when you have real approved details.
